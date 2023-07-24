@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"poopins", sans-serif;
+}
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 179, 179)
+}
+.container{
+    position:relative;
+    max-width: 300px;
+    width:100%;
+    padding: 10px 20px 20px;
+    background-color: rgb(14, 13, 14);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display{
+    height: 80px;
+    width:100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:black;
+}
+.buttons{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+    padding:12px 10px;
+    border-radius: 6px;
+    border:none;
+    font-size:20px;
+    cursor: pointer;
+    background-color: rgb(239, 246, 247);
+}
+.buttons button:active {
+    transform: scale(0.99);
+}
+.operator{
+    color:rgb(9, 190, 245);
+}
